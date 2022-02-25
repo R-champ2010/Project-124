@@ -11,7 +11,7 @@ function setup(){
     posenet=ml5.poseNet(video, modelLoaded);
 }
 
-function draw(){
+function modelLoaded(){
     console.log('Posenet is initialised!');
     poseNet.on('pose',gotPoses);
 }
